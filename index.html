@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peluches de Kirby | Dream Land</title>
+    <style>
+        /* Paleta de colores de Kirby */
+        :root {
+            --kirby-pink: #f8bbd0;  /* Rosa suave */
+            --kirby-red: #d81b60;   /* Rojo/Magenta de los pies y chapitas */
+            --star-yellow: #ffee58; /* Amarillo de estrella */
+            --dark-text: #4a148c;   /* Morado oscuro para contraste en el texto */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--kirby-pink);
+            color: var(--dark-text);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--kirby-red);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            border-bottom: 5px solid var(--star-yellow);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: var(--kirby-red);
+            border-bottom: 3px dashed var(--kirby-pink);
+            padding-bottom: 0.5rem;
+        }
+
+        .productos {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .peluche {
+            background-color: #fff9c4; /* Amarillo muy suave */
+            border: 3px solid var(--star-yellow);
+            border-radius: 12px;
+            padding: 1.5rem;
+            width: 28%;
+            text-align: center;
+            box-sizing: border-box;
+            transition: transform 0.2s;
+        }
+
+        .peluche:hover {
+            transform: scale(1.05); /* Efecto de acercamiento al pasar el mouse */
+        }
+
+        .precio {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--kirby-red);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--kirby-red);
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌟 Tienda de Peluches de Kirby 🌟</h1>
+        <p>¡El rincón más adorable de Dream Land!</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>¡Nuevos Lanzamientos!</h2>
+            <p>Explora nuestra colección de peluches redonditos y súper suaves. ¡Cuidado con que no se coman tu comida!</p>
+            
+            <div class="productos">
+                <!-- Producto 1 -->
+                <article class="peluche">
+                    <h3>Kirby Clásico</h3>
+                    <p>El héroe rosado en su forma original. Perfecto para abrazar.</p>
+                    <p class="precio">$250 MXN</p>
+                </article>
+
+                <!-- Producto 2 -->
+                <article class="peluche">
+                    <h3>Kirby Durmiente</h3>
+                    <p>Con su gorrito de dormir. Ideal para acompañarte en la siesta.</p>
+                    <p class="precio">$280 MXN</p>
+                </article>
+
+                <!-- Producto 3 -->
+                <article class="peluche">
+                    <h3>Kirby Chef</h3>
+                    <p>¡Listo para cocinar un festín! Incluye su sartén y gorro.</p>
+                    <p class="precio">$300 MXN</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Hecho con 💖 en Dream Land</p>
+    </footer>
+
+</body>
+</html>
